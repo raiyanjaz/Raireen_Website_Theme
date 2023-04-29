@@ -22,7 +22,7 @@
             <div class=option-aboutus><a href="<?php echo site_url('/about-us'); ?>">About Us</a></div>
             <div class=option-services><a href="<?php echo site_url('/services'); ?>">Services</a></div>
             <div class=option-contact><a href="<?php echo site_url('/contact'); ?>">Contact</a></div>
-            <div class=option-register-button>
+            <div class="option-register-button">
                 <a href="<?php echo site_url('/register'); ?>">Register</a>
             </div>
         </div>

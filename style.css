@@ -12,16 +12,6 @@ h2 {
     text-decoration: none;
 }
 
-.admin-bar .main-header {
-    top: 25px;
-}
-
-@media screen and (max-width: 782px) {
-    .admin-bar .sticky-header {
-      top: 46px;
-    }
-}
-
 /* -------------------------------------- */
 /* HEADER CSS */
 /* -------------------------------------- */
@@ -32,9 +22,7 @@ h2 {
     justify-content: center;
     align-items: center;
     padding: 20px 40px;
-    gap: 200px;
     position: absolute;
-    height: 92.68px;
     left: 0px;
     top: 0px;
     right: 0px;
@@ -44,9 +32,7 @@ h2 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0px;
-    gap: 15.08px; 
-    height: 52.68px;
+    gap: 15px; 
     flex: none;
     order: 0;
     align-self: stretch;
@@ -291,3 +277,154 @@ a:hover {
     flex-grow: 0;
 }
 
+/* -------------------------------------- */
+/* FRONT PAGE CSS */
+/* -------------------------------------- */
+
+.home-page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+    
+    position: absolute;
+    width: 1360px;
+    left: calc(50% - 1360px/2);
+    top: 93px;
+    bottom: 624.86px;
+}
+
+.landing-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 20px 50px;
+    gap: 70px;
+    width: 1360px;
+    height: 637px;
+    background: rgba(217, 217, 217, 0.35);
+    border-radius: 20px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.service-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    gap: 100px;
+    
+    width: 1360px;
+    height: 429.14px;
+    
+    background: #2E7FE3;
+    border-radius: 20px;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.welcome-text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    width: 546px;
+    height: 274.14px;
+    flex: none;
+    order: 0;
+    flex-grow: 0; 
+}
+
+.landing-container img {
+    width: 674px;
+    height: 597px;
+    background: #D9D9D9;
+    border-radius: 20px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.welcome-text-box span {
+    width: 196px;
+    height: 48px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #2E7FE3;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.welcome-text-box h2 {
+    width: 546px;
+    height: 96px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #151515; 
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.get-started-button {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    width: 160.14px;
+    height: 64.14px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;  
+}
+
+.get-started-button2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 18.57px;
+    width: 160.14px;
+    height: 64.14px;
+    background: #2E7FE3;
+    border-radius: 18.5714px;
+    flex: none;
+    order: 0;
+    flex-grow: 0; 
+}
+
+.get-started-button2 a {
+    width: 123px;
+    height: 27px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22.2857px;
+    line-height: 27px;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.get-started-button2:hover {
+    background: #2360ac;
+}
