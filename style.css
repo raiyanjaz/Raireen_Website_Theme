@@ -1,0 +1,231 @@
+/*
+    Theme Name: Raireen Theme
+    Author: Raiyan Aaijaz
+    Version: 1.0
+*/
+
+/* HEADER CSS */
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    text-decoration: none;
+}
+
+.main-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    gap: 200px;
+    position: absolute;
+    height: 92.68px;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+}
+
+.header-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 15.08px; 
+    height: 52.68px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 1;
+}
+
+.header-left img {
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    width: 52.68px;
+    height: 52.68px;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    width: 213px;
+    height: 22px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.header-text2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 13.51px;
+    width: 213px;
+    height: 22px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.header-text2 a {
+    width: 213px;
+    height: 22px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #2E7FE3;
+    flex: none;
+    order: 0;
+    flex-grow: 0; 
+}
+
+.header-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 21.61px;
+    width: 383.85px;
+    height: 52.68px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.option-aboutus {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 13.51px;
+    width: 79px;
+    height: 22px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.option-aboutus a {
+    width: 79px;
+    height: 22px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #2E7FE3;
+    flex: none;
+    order: 0;
+    flex-grow: 0; 
+}
+
+.option-services {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 13.51px;
+    width: 74px;
+    height: 22px;
+    flex: none;
+    order: 1;
+    flex-grow: 0; 
+}
+
+.option-services a {
+    width: 74px;
+    height: 22px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #2E7FE3;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.option-contact {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 13.51px;
+    width: 68px;
+    height: 22px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.option-contact a {
+    width: 68px;
+    height: 22px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #2E7FE3;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.option-register-button {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    width: 98.02px;
+    height: 49.02px;
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+}
+
+.option-register-button button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 13.508px;
+    gap: 13.51px;
+    width: 98.02px;
+    height: 49.02px;
+    background: #2E7FE3;
+    border-radius: 13.508px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    border: 0;
+}
+
+.option-register-button button span {
+    width: 71px;
+    height: 22px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+/* FOOTER CSS */
