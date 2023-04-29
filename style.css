@@ -185,6 +185,10 @@ h2 {
     flex-grow: 0;
 }
 
+a:hover {
+    font-weight: 700;
+}
+
 .option-register-button {
     display: flex;
     flex-direction: row;
@@ -197,24 +201,7 @@ h2 {
     flex-grow: 0;
 }
 
-.option-register-button button {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 13.508px;
-    gap: 13.51px;
-    width: 98.02px;
-    height: 49.02px;
-    background: #2E7FE3;
-    border-radius: 13.508px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    border: 0;
-}
-
-.option-register-button button span {
+.option-register-button a {
     width: 71px;
     height: 22px;
     font-family: 'Inter';
@@ -224,8 +211,15 @@ h2 {
     line-height: 22px;
     color: #FFFFFF;
     flex: none;
-    order: 0;
+    order: 0; 
     flex-grow: 0;
+    background: #2E7FE3;
+    border-radius: 13.508px;
+    padding: 13.508px;
+}
+
+.option-register-button a:hover {
+    background: #2360ac;
 }
 
 /* FOOTER CSS */
