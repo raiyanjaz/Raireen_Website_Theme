@@ -13,9 +13,7 @@
         <div class="header-left">
             <img src="<?php echo get_theme_file_uri('raireenLogo.jpg')?>">
             <div class="header-text">
-                <div class="header-text2">
-                    <a href="<?php echo site_url(); ?>"> Raireen Learning Centre </a>
-                </div>
+                <a href="<?php echo site_url(); ?>"> Raireen Learning Centre </a>
             </div>
         </div>
         <div class=header-options>

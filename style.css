@@ -24,8 +24,8 @@ h2 {
     padding: 20px 40px;
     position: absolute;
     left: 0px;
-    top: 0px;
     right: 0px;
+    top: 0px;
 }
 
 .header-left {
@@ -59,23 +59,7 @@ h2 {
     flex-grow: 0;
 }
 
-.header-text2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    gap: 13.51px;
-    width: 213px;
-    height: 22px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-}
-
-.header-text2 a {
-    width: 213px;
-    height: 22px;
+.header-text a {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
@@ -93,9 +77,7 @@ h2 {
     justify-content: center;
     align-items: center;
     padding: 0px;
-    gap: 21.61px;
-    width: 383.85px;
-    height: 52.68px;
+    gap: 22px;
     flex: none;
     order: 1;
     align-self: stretch;
@@ -107,26 +89,9 @@ h2 {
     flex-direction: row;
     align-items: flex-start;
     padding: 0px;
-    gap: 13.51px;
-    width: 79px;
-    height: 22px;
     flex: none;
     order: 0;
     flex-grow: 0;
-}
-
-.option-aboutus a {
-    width: 79px;
-    height: 22px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    color: #2E7FE3;
-    flex: none;
-    order: 0;
-    flex-grow: 0; 
 }
 
 .option-services {
@@ -134,25 +99,8 @@ h2 {
     flex-direction: row;
     align-items: flex-start;
     padding: 0px;
-    gap: 13.51px;
-    width: 74px;
-    height: 22px;
     flex: none;
     order: 1;
-    flex-grow: 0; 
-}
-
-.option-services a {
-    width: 74px;
-    height: 22px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    color: #2E7FE3;
-    flex: none;
-    order: 0;
     flex-grow: 0;
 }
 
@@ -161,22 +109,17 @@ h2 {
     flex-direction: row;
     align-items: flex-start;
     padding: 0px;
-    gap: 13.51px;
-    width: 68px;
-    height: 22px;
     flex: none;
     order: 2;
     flex-grow: 0;
 }
 
-.option-contact a {
-    width: 68px;
-    height: 22px;
+.header-options a {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 16px;
+    line-height: 19px;
     color: #2E7FE3;
     flex: none;
     order: 0;
@@ -192,28 +135,24 @@ a:hover {
     flex-direction: row;
     align-items: flex-start;
     padding: 0px;
-    width: 98.02px;
-    height: 49.02px;
     flex: none;
     order: 3;
     flex-grow: 0;
 }
 
 .option-register-button a {
-    width: 71px;
-    height: 22px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 16px;
+    line-height: 19px;
     color: #FFFFFF;
     flex: none;
     order: 0; 
     flex-grow: 0;
     background: #2E7FE3;
-    border-radius: 13.508px;
-    padding: 13.508px;
+    border-radius: 13px;
+    padding: 13px;
 }
 
 .option-register-button a:hover {
