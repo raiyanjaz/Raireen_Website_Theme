@@ -4,8 +4,6 @@
     Version: 1.0
 */
 
-/* HEADER CSS */
-
 a {
     text-decoration: none;
 }
@@ -13,6 +11,20 @@ a {
 h2 {
     text-decoration: none;
 }
+
+.admin-bar .main-header {
+    top: 25px;
+}
+
+@media screen and (max-width: 782px) {
+    .admin-bar .sticky-header {
+      top: 46px;
+    }
+}
+
+/* -------------------------------------- */
+/* HEADER CSS */
+/* -------------------------------------- */
 
 .main-header {
     display: flex;
@@ -222,4 +234,60 @@ a:hover {
     background: #2360ac;
 }
 
+/* -------------------------------------- */
 /* FOOTER CSS */
+/* -------------------------------------- */
+
+.main-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    position: absolute;
+    height: 57px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.footer-caption {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 366px;
+    height: 17px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.footer-caption2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    width: 366px;
+    height: 17px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.footer-caption2 span {
+    width: 366px;
+    height: 17px; 
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #2E7FE3;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
