@@ -26,6 +26,34 @@
                 currently available courses: </p>
         </div>
         <div class="service-banner">
+            <?php 
+                // Class will access info from the database automatically
+                $homepageCourses = new WP_Query(array(
+                    'posts_per_page' => 3,
+                    'post_type' => 'courses'
+                )); 
+
+                while ($homepageCourses->have_posts()) {
+                    $homepageCourses->the_post(); ?>
+
+            <div class="course-display">
+                <img src="<?php ?>">
+                <div class="course-title"><span><?php the_title(); ?></span></div>
+                <div class="course-desc"><span></span> <?php echo wp_trim_words(get_the_content(), 19); ?></div>
+                <div class="course-btn"><a href="<?php permalink_link()?>">See More -></a></div>
+            </div>
+            <?php
+            }
+            ?>
+
+
+
+
+
+
+
+
+
 
         </div>
     </div>
