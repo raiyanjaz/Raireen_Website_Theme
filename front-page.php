@@ -14,7 +14,7 @@
                 </div>
             </div>
         </div>
-        <img src="<?php echo get_theme_file_uri('/images/torontoSkyline.jpg')?>">
+        <img src="<?php echo get_theme_file_uri('/images/lakeSunrise.jpg')?>">
     </div>
 
     <div class="service-container">
