@@ -7,7 +7,6 @@
 body {
     position: relative;
     background: #FFFFFF;
-    overflow-x: hidden;
 }
 
 img {
@@ -33,7 +32,7 @@ h2 {
     justify-content: center;
     align-items: center;
     padding: 20px 40px;
-    position: absolute;
+    position: relative;
     left: 0px;
     right: 0px;
     top: 0px;
@@ -180,9 +179,9 @@ a:hover {
     justify-content: center;
     align-items: center;
     padding: 10px 0px;
-    position: absolute;
-    right: 0px;
+    position: relative;
     left: 0px;
+    right: 0px;
     bottom: 0px;
 }
 
@@ -209,12 +208,19 @@ a:hover {
     justify-content: center;
     align-items: center;
     padding: 0px;
+    padding-bottom: 20px;
     gap: 20px;
     
-    position: absolute;
+    position: relative;
     width: 1366px;
     left: calc(50% - 1366px/2);
-    top: 93px;
+}
+
+@media only screen and (max-width: 1440px) {
+    .home-page-container {
+        scale: 75%;
+        top: -200px;
+    }
 }
 
 .landing-container {
@@ -440,6 +446,7 @@ a:hover {
     flex: none;
     order: 0;
     flex-grow: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .course-display img {

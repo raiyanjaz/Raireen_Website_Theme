@@ -74,6 +74,7 @@
     <?php
     }
     ?>
+
 </div>
 
 <?php get_footer(); ?>
