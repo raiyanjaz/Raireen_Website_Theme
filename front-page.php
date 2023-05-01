@@ -14,7 +14,7 @@
                 </div>
             </div>
         </div>
-        <img src="<?php echo get_theme_file_uri('torontoSkyline.jpg')?>">
+        <img src="<?php echo get_theme_file_uri('/images/torontoSkyline.jpg')?>">
     </div>
 
     <div class="service-container">
@@ -68,7 +68,7 @@
             <img class="img4" src="<?php ?>">
         </div>
         <div class="learn-more-btn">
-            <a href="">Learn More -></a>
+            <a href="<?php the_permalink() ?>">Learn More -></a>
         </div>
     </div>
     <?php

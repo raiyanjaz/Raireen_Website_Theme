@@ -7,6 +7,13 @@ function raireen_files() {
 
 add_action('wp_enqueue_scripts', 'raireen_files');
 
+function theme_features() {
+    // Adds the title of the page on the tab
+    add_theme_support('title-tag');
+}
+
+add_action('after_setup_theme', 'theme_features');
+
 function post_types() {
     register_post_type('courses', array(
         'public' => true,
