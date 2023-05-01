@@ -37,7 +37,13 @@
                     $homepageCourses->the_post(); ?>
 
             <div class="course-display">
-                <img src="<?php ?>">
+                <img src="<?php 
+                    if (get_the_ID($homepageCourses) == 24)
+                        echo get_theme_file_uri('/images/anatomyCoaching.jpg'); 
+                    if (get_the_ID($homepageCourses) == 7)
+                        echo get_theme_file_uri('/images/highschoolCourses.jpg');
+                    if (get_the_ID($homepageCourses) == 5)
+                        echo get_theme_file_uri('/images/mathTutoring.jpg'); ?>">
                 <div class="course-title"><span><?php the_title(); ?></span></div>
                 <div class="course-desc"><span></span> <?php echo wp_trim_words(get_the_content(), 19); ?></div>
                 <div class="course-btn"><a href="<?php permalink_link()?>">See More -></a></div>
@@ -62,10 +68,10 @@
                 Your Path to Success!</span></div>
         <div class="tour-desc"><span><?php echo wp_trim_words(get_the_content(), 44, ''); ?></span></div>
         <div class="tour-gallery1">
-            <img class="img1" src="<?php ?>">
-            <img class="img2" src="<?php ?>">
-            <img class="img3" src="<?php ?>">
-            <img class="img4" src="<?php ?>">
+            <img class="img1" src="<?php echo get_theme_file_uri('images/canadaFlag.jpg') ?>">
+            <img class="img2" src="<?php echo get_theme_file_uri('images/torontoSign.jpg') ?>">
+            <img class="img3" src="<?php echo get_theme_file_uri('images/niagaraFalls.jpg') ?>">
+            <img class="img4" src="<?php echo get_theme_file_uri('images/montreal.jpg') ?>">
         </div>
         <div class="learn-more-btn">
             <a href="<?php the_permalink() ?>">Learn More -></a>

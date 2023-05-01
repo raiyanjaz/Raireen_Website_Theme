@@ -9,14 +9,14 @@ while (have_posts()) {
         <div class="page-title">
             <span><?php the_title(); ?></span>
         </div>
-        <img src="">
+        <img src="<?php 
+        if (get_the_ID(the_post()) == 28)        
+            echo get_theme_file_uri('images/canadaFlag.jpg'); ?>">
     </div>
     <div class="page-content">
         <span><?php the_content(); ?></span>
     </div>
-    <div class="register-btn">
+    <div class=" register-btn">
         <a href="">Register -></a>
     </div>
 </div>
-
-<?php get_footer(); ?>
