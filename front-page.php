@@ -45,19 +45,35 @@
             <?php
             }
             ?>
-
-
-
-
-
-
-
-
-
-
         </div>
     </div>
 
+    <?php
+    $homepageTours = new WP_Query(array(
+        'post_type' => 'study tours'
+    ));
+
+    while ($homepageTours->have_posts()) {
+        $homepageTours->the_post(); ?>
+
+    <div class="tours-container">
+        <div class="tour-header"><span>Experience Canada's Rich Culture and Industries with
+                <span><?php the_title(); ?></span> -
+                Your Path to Success!</span></div>
+        <div class="tour-desc"><span><?php echo wp_trim_words(get_the_content(), 44, ''); ?></span></div>
+        <div class="tour-gallery1">
+            <img class="img1" src="<?php ?>">
+            <img class="img2" src="<?php ?>">
+            <img class="img3" src="<?php ?>">
+            <img class="img4" src="<?php ?>">
+        </div>
+        <div class="learn-more-btn">
+            <a href="">Learn More -></a>
+        </div>
+    </div>
+    <?php
+    }
+    ?>
 </div>
 
 <?php get_footer(); ?>

@@ -20,6 +20,18 @@ function post_types() {
         'description' => 'Add or Remove Available Courses',
         'menu_icon' => 'dashicons-welcome-learn-more'
     ));
+    register_post_type('study tours', array(
+        'public' => true,
+        'labels' => array(
+            'name' => 'Study Tours',
+            'add_new_item' => 'Add New Study Tour',
+            'edit_item' => 'Edit Study Tour',
+            'all_items' => 'All Study Tours',
+            'singular_name' => 'Study Tour'
+        ),
+        'description' => 'Add or Remove Available Tours',
+        'menu_icon' => 'dashicons-airplane'
+    ));
 }
 
 add_action('init', 'post_types');
