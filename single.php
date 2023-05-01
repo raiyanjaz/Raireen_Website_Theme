@@ -20,3 +20,5 @@ while (have_posts()) {
         <a href="">Register -></a>
     </div>
 </div>
+
+<?php get_footer(); ?>

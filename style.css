@@ -7,6 +7,9 @@
 body {
     position: relative;
     background: #FFFFFF;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 img {
@@ -180,6 +183,7 @@ a:hover {
     align-items: center;
     padding: 10px 0px;
     position: relative;
+    margin-top: auto;
     left: 0px;
     right: 0px;
     bottom: 0px;
@@ -216,7 +220,7 @@ a:hover {
     left: calc(50% - 1366px/2);
 }
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1439px) {
     .home-page-container {
         scale: 75%;
         top: -200px;
