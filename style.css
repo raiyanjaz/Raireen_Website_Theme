@@ -5,11 +5,12 @@
 */
 
 body {
-    position: relative;
+    width: 100vw;
     background: #FFFFFF;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
+    margin: 0px;
 }
 
 img {
@@ -184,8 +185,6 @@ a:hover {
     padding: 10px 0px;
     position: relative;
     margin-top: auto;
-    left: 0px;
-    right: 0px;
     bottom: 0px;
 }
 
@@ -689,7 +688,7 @@ a:hover {
 /* SINGLE PAGE CSS */
 /* -------------------------------------- */
 
-.page-body {
+.single-body {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -701,7 +700,7 @@ a:hover {
     top: 93px;
 }
 
-.page-header {
+.single-header {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -716,7 +715,7 @@ a:hover {
     flex-grow: 0;
 }
 
-.page-title {
+.single-title {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -727,7 +726,7 @@ a:hover {
     flex-grow: 0;
 }
 
-.page-title span {
+.single-title span {
     font-family: 'Inter';
     width: 265px;
     font-style: normal;
@@ -740,7 +739,7 @@ a:hover {
     flex-grow: 0;
 }
 
-.page-header img {
+.single-header img {
     width: 931px;
     height: 231px;
     background: #D9D9D9;
@@ -751,7 +750,7 @@ a:hover {
     flex-grow: 1;
 }
 
-.page-content {
+.single-content {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -763,7 +762,7 @@ a:hover {
     flex-grow: 0;
 }
 
-.page-content span {
+.single-content span {
     width: 1366px;
     font-family: 'Inter';
     font-style: normal;
@@ -799,5 +798,82 @@ a:hover {
     color: #FFFFFF;
     flex: none;
     order: 0;
+    flex-grow: 0;
+}
+
+/* -------------------------------------- */
+/* MAIN PAGE CSS */
+/* -------------------------------------- */
+
+.page {
+
+}
+
+.page-banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background: #2E7FE3;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.page-banner p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.page-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    gap: 54px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.page-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+.page-content p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #151515;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+.page-body img {
+    width: 400px;
+    height: 300px;
+    flex: none;
+    order: 1;
     flex-grow: 0;
 }
