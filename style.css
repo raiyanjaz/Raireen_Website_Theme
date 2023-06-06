@@ -11,6 +11,8 @@ body {
     flex-direction: column;
     overflow-x: hidden;
     margin: 0px;
+    font-family: 'Inter';
+    font-style: normal;
 }
 
 img {
@@ -805,10 +807,6 @@ a:hover {
 /* MAIN PAGE CSS */
 /* -------------------------------------- */
 
-.page {
-
-}
-
 .page-banner {
     display: flex;
     flex-direction: row;
@@ -816,22 +814,13 @@ a:hover {
     align-items: center;
     height: 150px;
     background: #2E7FE3;
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
 }
 
 .page-banner p {
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
     color: #FFFFFF;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
 }
 
 .page-body {
@@ -876,4 +865,47 @@ a:hover {
     flex: none;
     order: 1;
     flex-grow: 0;
+}
+
+/* -------------------------------------- */
+/* SERVICES PAGE CSS */
+/* -------------------------------------- */
+
+.course-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+.card {
+    width: 280px;
+    height: 300px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateZ(10px);
+}
+
+.card img {
+    width: 316px;
+    height: 196px;
+    border-radius: 5px;
+}
+
+.card h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 12px;
 }
