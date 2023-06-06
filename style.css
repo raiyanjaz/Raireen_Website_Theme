@@ -904,8 +904,40 @@ a:hover {
 .card h2 {
     font-size: 18px;
     margin-bottom: 10px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* Limit to 2 lines of text */
+    -webkit-box-orient: vertical;
 }
 
 .card p {
     font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Add ellipsis (...) for truncated content */
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limit to 2 lines of text */
+    -webkit-box-orient: vertical;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 1440px) {
+    .course-container {
+        flex-wrap: wrap; /* Allow multiple rows */
+    }
+    
+    .card {
+        width: calc(33.33% - 20px); /* Display three cards per row */
+    }
+    
+    @media (max-width: 768px) {
+        .card {
+            width: calc(50% - 20px); /* Display two cards per row */
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .card {
+            width: calc(100% - 20px); /* Display one card per row */
+        }
+    }
 }
