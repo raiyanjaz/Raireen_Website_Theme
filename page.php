@@ -23,7 +23,7 @@ if (get_the_ID(the_post()) == 33) { // If on the service page
         }
 ?>
 
-<div class="card">
+<div class="card" onclick="openModal(<?php echo get_the_ID(); ?>)">
     <img src="<?php echo get_theme_file_uri('/images/lakeSunrise.jpg')?>" alt="Course 1">
     <h2><?php echo wp_trim_words(get_the_title(), 3); ?></h2>
     <p><?php echo wp_trim_words(get_the_content(), 20); ?></p>
@@ -39,17 +39,13 @@ if (get_the_ID(the_post()) == 33) { // If on the service page
 }
 ?>
 
-<!--
-<div class="page">
-    <div class="page-banner">
-        <p><?php the_title(); ?></p>
+<div class="empty"></div> <!-- Temporary div -->
+
+<div id="course-modal" class="course-modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <!-- Course content will be dynamically populated here -->
     </div>
-    <div class="page-body">
-        <div class="page-content">
-            <p><?php the_content(); ?></p>
-        </div>
-        <img src="<?php echo get_theme_file_uri('/images/lakeSunrise.jpg')?>">
-    </div>
-</div> --->
+</div>
 
 <?php get_footer(); ?>
