@@ -6,9 +6,8 @@
 
 body {
     width: 100vw;
+    height: 100%;
     background: #FFFFFF;
-    display: flex;
-    flex-direction: column;
     overflow-x: hidden;
     margin: 0px;
     font-family: 'Inter';
@@ -179,28 +178,58 @@ a:hover {
 /* FOOTER CSS */
 /* -------------------------------------- */
 
-.main-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 0px;
-    position: relative;
-    margin-top: auto;
-    bottom: 0px;
+.footer {
+    background:#2E7FE3;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align:center;
 }
 
-.main-footer span { 
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 17px;
-    text-align: center;   
-    color: #2E7FE3;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+.footer .row {
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:#FFFFFF;
+    font-size:0.8em;
+}
+
+.footer .row a {
+    text-decoration:none;
+    color:#FFFFFF;
+    transition:0.5s;
+}
+    
+.footer .row a:hover {
+    color:#fff;
+}
+    
+.footer .row ul {
+    width:100%;
+}
+    
+.footer .row ul li {
+    display:inline-block;
+    margin:0px 30px;
+}
+    
+.footer .row a i {
+    font-size:2em;
+    margin:0% 1%;
+}
+    
+@media (max-width:720px) {
+    .footer {
+        text-align:left;
+        padding:5%;
+    }
+    .footer .row ul li {
+        display:block;
+        margin:10px 0px;
+        text-align:left;
+    }
+    .footer .row a i {
+        margin:0% 3%;
+    }
 }
 
 /* -------------------------------------- */
@@ -875,8 +904,7 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    border: 2px solid black;
+    padding-top: 20px;
 }
 
 .card {
@@ -892,7 +920,8 @@ a:hover {
 }
 
 .card:hover {
-    transform: translateZ(10px);
+    scale: 105%;
+    transition: 0.3s ease;
 }
 
 .card img {
@@ -924,20 +953,7 @@ a:hover {
     .course-container {
         flex-wrap: wrap; /* Allow multiple rows */
     }
-    
     .card {
-        width: calc(33.33% - 20px); /* Display three cards per row */
-    }
-    
-    @media (max-width: 768px) {
-        .card {
-            width: calc(50% - 20px); /* Display two cards per row */
-        }
-    }
-    
-    @media (max-width: 480px) {
-        .card {
-            width: calc(100% - 20px); /* Display one card per row */
-        }
+        width: 280px; /* Display three cards per row */
     }
 }
