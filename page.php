@@ -5,7 +5,7 @@
 </div>
 
 <?php 
-if (get_the_ID(the_post()) == 33) { // If on the service page
+if (get_the_ID() == 33) { // If on the service page
     $courses = new WP_Query(array(
         'post_type' => 'courses'
     ));          
@@ -23,8 +23,15 @@ if (get_the_ID(the_post()) == 33) { // If on the service page
         }
 ?>
 
-<div class="card" onclick="openModal(<?php echo get_the_title(); ?>)">
-    <img src="<?php echo get_theme_file_uri('/images/lakeSunrise.jpg')?>" alt="Course 1">
+<div class="card" onclick="openModal(<?php echo get_the_ID(); ?>)">
+    <?php
+    if (has_post_thumbnail()) {
+        the_post_thumbnail('thumbnail');
+    } else {
+        // Display a default thumbnail if no featured image is set
+        echo '<img src="' . get_theme_file_uri('images\mathTutoring.jpg') . '" alt="Default Thumbnail">';
+    }
+    ?>
     <h2><?php echo wp_trim_words(get_the_title(), 3); ?></h2>
     <p><?php echo wp_trim_words(get_the_content(), 20); ?></p>
 </div>
@@ -42,6 +49,7 @@ if (get_the_ID(the_post()) == 33) { // If on the service page
 <div class="empty"></div> <!-- Temporary div -->
 
 <div id="course-modal" class="course-modal">
+
     <div class="modal-content">
         <!-- Course content will be dynamically populated here -->
     </div>
