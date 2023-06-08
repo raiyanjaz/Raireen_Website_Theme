@@ -48,49 +48,10 @@ if (get_the_ID() == 33) { // If on the service page
 
 <section class="first">
     <div class="container">
-        <p>Adipisicing ipsum dolor sit amet consectetur elit. Consectetur beatae eius, labore quasi ab neque asperiores
-            repellendus praesentium in! Necessitatibus excepturi, accusantium esse eosnulla odit dicta deserunt iusto
-            soluta.</p>
-        <p>Labore quasi <strong>abneque asperiores repellendus</strong> praesentium in! Necessitatibus excepturi,
-            accusantium esse eos nulla odit dicta deserunt iusto. Tuasi ablabore neque <u>asperiores repellendus
-                praesentium</u> in! Necessitatibus excepturi, accusantium esse eos nulla odit dicta deserunt iusto
-            soluta. Labore quasi ab neque asperiores repellendus praesentium.</p>
-        <a class="cta" href="index.html">Discover more ⟩</a>
+        <p> <?php echo get_the_content(); ?></p>
+        <a class="cta" href="../services">Discover more ⟩</a>
     </div>
 </section>
-<section class="second">
-    <div class="container">
-        <div class="left-img">
-            <img src="./img/photo-1.jpg" alt="Person">
-        </div>
-        <div class="right-content">
-            <h2>Perspiciatis cupiditate deserunt</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum in cumque, id quisquam praesentium
-                unde dolor fugiat mollitia perspiciatis cupiditate deserunt, odit quo non officiis optio illum eum ad
-                expedita? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit enim dolorum, adipisci
-                explicabo, officia reprehenderit velit quasi voluptatibus consectetur et accusantium quam quaerat
-                voluptates vel sapiente consequuntur doloribus illum dolores!</p>
-            <a class="cta" href="index.html">Learn more »</a>
-        </div>
-    </div>
-</section>
-<section class="third">
-    <div class="container">
-        <div class="left-content">
-            <h2>Mollitia consequatur</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In consequuntur velit repudiandae nobis sunt
-                quisquam odio nesciunt! Saepe aspernatur in ad itaque quasi vel voluptatem recusandae nemo rem uidem
-                facilis.</p>
-            <p>Aliquidorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quo porro laborum non
-                praesentium delectus ipsum, ullam necessitatibus assumenda voluptatem repellendus quis cumque nobis unde
-                aliquam mollitia asperiores consequatur.</p>
-            <a class="cta" href="index.html">Contact us »</a>
-        </div>
-        <div class="right-img">
-            <img src="./img/photo-2.jpg" alt="photo">
-        </div>
-    </div> <!-- .container -->
-</section> <!-- .third -->
 <section class="four">
     <div class="container">
         <div class="member">

@@ -75,8 +75,6 @@ h2 {
 }
 
 .header-text a {
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
@@ -126,19 +124,14 @@ h2 {
     padding: 0px;
     flex: none;
     order: 2;
-    flex-grow: 0;
 }
 
 .header-options a {
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     color: #2E7FE3;
-    flex: none;
     order: 0;
-    flex-grow: 0;
 }
 
 a:hover {
@@ -149,29 +142,23 @@ a:hover {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 0px;
-    flex: none;
     order: 3;
-    flex-grow: 0;
 }
 
 .option-register-button a {
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     color: #FFFFFF;
-    flex: none;
     order: 0; 
-    flex-grow: 0;
     background: #2E7FE3;
-    border-radius: 13px;
-    padding: 13px;
+    border-radius: 5px;
+    padding: 10px;
 }
 
 .option-register-button a:hover {
     background: #2360ac;
+    transition: ease 0.3s;
 }
 
 /* -------------------------------------- */
@@ -294,8 +281,6 @@ a:hover {
 }
 
 .welcome-text span {
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 700;
     font-size: 40px;
     color: #2E7FE3;
@@ -314,8 +299,6 @@ a:hover {
 
 .mission-text span {
     width: 516px;
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 700;
     font-size: 40px;
     line-height: 48px;
@@ -336,8 +319,6 @@ a:hover {
 }
 
 .text p {
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
@@ -382,8 +363,6 @@ a:hover {
 }
 
 .get-started-button2 a {
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
@@ -424,14 +403,11 @@ a:hover {
 }
 
 .service-intro span {
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 700;
     font-size: 30px;
     color: #FFFFFF;
     flex: none;
     order: 0;
-    flex-grow: 0;
 }
 
 .service-description {  
@@ -441,19 +417,15 @@ a:hover {
     padding: 0px;
     flex: none;
     order: 1;
-    flex-grow: 0;
 }
 
 .service-description p {
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
     color: #FFFFFF;
     flex: none;
     order: 0;
-    flex-grow: 0;
 }
 
 .service-banner {
@@ -466,7 +438,6 @@ a:hover {
     flex: none;
     order: 2;
     align-self: stretch;
-    flex-grow: 0;
 }
 
 .course-display {
@@ -480,7 +451,6 @@ a:hover {
     border-radius: 18.9812px;
     flex: none;
     order: 0;
-    flex-grow: 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -490,7 +460,6 @@ a:hover {
     border-radius: 20px;
     flex: none;
     order: 0;
-    flex-grow: 0;
 }
 
 .course-title {
@@ -501,7 +470,6 @@ a:hover {
     width: 316px;
     flex: none;
     order: 1;
-    flex-grow: 0;
 }
 
 .course-title span {
@@ -513,7 +481,6 @@ a:hover {
     color: #151515;
     flex: none;
     order: 0;
-    flex-grow: 0;
 }
 
 .course-desc {
@@ -525,7 +492,6 @@ a:hover {
     flex: none;
     order: 2;
     align-self: stretch;
-    flex-grow: 0;
 }
 
 .course-desc span {
@@ -547,7 +513,6 @@ a:hover {
     padding: 10px;
     flex: none;
     order: 3;
-    flex-grow: 0;
     background: #2E7FE3;
     border-radius: 9.49062px;
 }
@@ -565,7 +530,6 @@ a:hover {
     color: #FFFFFF;
     flex: none;
     order: 0;
-    flex-grow: 0;
 }
 
 .tours-container {
@@ -578,7 +542,6 @@ a:hover {
     flex: none;
     order: 2;
     align-self: stretch;
-    flex-grow: 0;
 }
 
 .tour-header {
@@ -590,7 +553,6 @@ a:hover {
     gap: 10px;
     flex: none;
     order: 0;
-    flex-grow: 0;
 }
 
 .tour-header span {
@@ -604,7 +566,6 @@ a:hover {
     color: #151515;
     flex: none;
     order: 0;
-    flex-grow: 0;
 }
 
 .tour-header span span {
@@ -620,8 +581,7 @@ a:hover {
     gap: 10px;
     flex: none;
     order: 1;
-    align-self: stretch;
-    flex-grow: 0; 
+    align-self: stretch; 
 }
 
 .tour-desc span {
@@ -648,7 +608,6 @@ a:hover {
     flex: none;
     order: 2;
     align-self: stretch;
-    flex-grow: 0;
 }
 
 .img1 {
@@ -658,7 +617,6 @@ a:hover {
     border-radius: 20px;
     flex: none;
     order: 0;
-    flex-grow: 0;
 }
 
 .img2 {
@@ -668,7 +626,6 @@ a:hover {
     border-radius: 20px;
     flex: none;
     order: 1;
-    flex-grow: 0;
 }
 
 .img3 {
@@ -678,7 +635,6 @@ a:hover {
     border-radius: 20px;
     flex: none;
     order: 2;
-    flex-grow: 0;
 }
 
 .img4 {
@@ -688,7 +644,6 @@ a:hover {
     border-radius: 20px;
     flex: none;
     order: 3;
-    flex-grow: 0;
 }
 
 .learn-more-btn {
