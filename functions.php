@@ -3,8 +3,9 @@
 function raireen_files() {
     wp_enqueue_style('raireen_main_files', get_stylesheet_uri());
     wp_enqueue_style('custom-google-fonts', 'https://fonts.googleapis.com/css?family=Inter');
-    wp_enqueue_style( 'raireen-css', get_template_directory_uri() . '/css/service-page.css', array(), '1.0', 'all' );
-    wp_enqueue_script('raireen-js', get_template_directory_uri() . '/raireen-script.js', array(), '1.0', true);
+    wp_enqueue_style( 'service-page-css', get_template_directory_uri() . '/css/service-page.css', array(), '1.0', 'all' );
+    wp_enqueue_style( 'about-page-css', get_template_directory_uri() . '/css/about-page.css', array(), '1.0', 'all' );
+    wp_enqueue_script('raireen-js', get_template_directory_uri() . '/js/raireen-script.js', array(), '1.0', true);
 }
 
 add_action('wp_enqueue_scripts', 'raireen_files');
@@ -66,7 +67,7 @@ function get_course_data($request) {
     }
 
     $course_data = array(
-        'thumbnail' => get_the_post_thumbnail_url($course->id),
+        'thumbnail' => get_the_post_thumbnail_url($course->ID),
         'title' => $course->post_title,
         'content' => $course->post_content,
         // Add more fields as needed

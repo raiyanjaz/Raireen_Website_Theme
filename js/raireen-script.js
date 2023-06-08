@@ -18,16 +18,16 @@ function openModal(courseId) {
 function populateModal(courseData) {
     var modalContent = document.querySelector('.modal-content');
     modalContent.innerHTML = `
-        <img src="${courseData.thumbnai}" alt="${courseData.title}" class="modal-image">
+        <img src="${courseData.thumbnail}" alt="${courseData.title}" class="modal-image">
         <h2>${courseData.title}</h2>
         <p>${courseData.content}</p>
-        
-        `;
+    `;
 }
 
 function showModal() {
     var modal = document.getElementById('course-modal');
     modal.style.display = 'block';
+    modal.style.transition = 'all 1s';
 
     window.onclick = function(event) {
         if (event.target === modal) {
